@@ -2,10 +2,10 @@
 
 file = "flatfile.properties"
 
-PROP_VALUE_PLATFORM=$(cat file | grep $PROP_VALUE_PLATFORM | cut -d'=' -f2)
-PROP_VALUE_SUBSCRIPTION=$(cat file | grep $PROP_VALUE_SUBSCRIPTION | cut -d'=' -f2)
-PROP_VALUE_RG=$(cat file | grep $PROP_VALUE_RG | cut -d'=' -f2)
-PROP_VALUE_CLOUD_EXT_ST_ACC=$(cat file | grep $PROP_VALUE_CLOUD_EXT_ST_ACC | cut -d'=' -f2)
+PROP_VALUE_PLATFORM=$(cat $file | grep $PROP_VALUE_PLATFORM | cut -d'=' -f2)
+PROP_VALUE_SUBSCRIPTION=$(cat $file | grep $PROP_VALUE_SUBSCRIPTION | cut -d'=' -f2)
+PROP_VALUE_RG=$(cat $file | grep $PROP_VALUE_RG | cut -d'=' -f2)
+PROP_VALUE_CLOUD_EXT_ST_ACC=$(cat $file | grep $PROP_VALUE_CLOUD_EXT_ST_ACC | cut -d'=' -f2)
 
 echo PROP_VALUE_PLATFORM: $PROP_VALUE_PLATFORM
 echo PROP_VALUE_CLOUD_EXT_ST_ACC: $PROP_VALUE_CLOUD_EXT_ST_ACC
