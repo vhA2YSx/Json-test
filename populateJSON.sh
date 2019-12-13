@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file = "/tmp/flatfile.properties"
+file = "flatfile.properties"
 
 PROP_VALUE_PLATFORM=$(cat file | grep $PROP_VALUE_PLATFORM | cut -d'=' -f2)
 PROP_VALUE_SUBSCRIPTION=$(cat file | grep $PROP_VALUE_SUBSCRIPTION | cut -d'=' -f2)
