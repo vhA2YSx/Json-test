@@ -1,0 +1,34 @@
+{
+	"name": "test.corp.test123.com",
+	"json_class": "Chef::Node",
+	"chef_environment": "test-azeus-test123",
+	"default_attributes": {},
+	"description": "VMT - Traffic - Server test",
+	"normal": {
+		"netboot": {
+			"type": "azure",
+			"azure": {
+				"subscription": "test",
+				"resource_group": "test-vmt-01",
+				"availabilityZone": 1,
+				"virtualMachineSize": "test_D4S_v3",
+				"vmImageSKU":2016,
+				"cloudExtensionStorageAccount": "testryptfmt099",
+				"keyVaultResourceGroup": "o-akv-44-65-77",
+				"diskEncryptionKeyVaultName": "o-rsg-99-01",
+				"bootDiagStorageAccount": "osttest01",
+				"vnetResourceGroupName": "o-test-test-01",
+				"vnetName": "o-test-01",
+				"subnetName": "VMTrafficaxper-1.1.1.2_28",
+				"domainName": "corp1111.test123.com",
+				"domainToJoin": "corp111.test123.com",
+				"OUPath": "OU=Computer Quarantine,DC=corp1111,DC=test123,DC=com"
+			}
+		}
+	},
+	"default": {},
+	"automatic": {},
+	"run_list": [
+		"recipe[test123-corp1111-agents]"
+	]
+}
